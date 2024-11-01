@@ -10,33 +10,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <UPage>
-    <UPageBody>
-      <ULandingSection class="bg-[#035ea5]" id="features" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-1-Ref.png">
-      </ULandingSection>
-
-
-      <ULandingSection class="bg-[#f7f7f7]" id="pricing" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-2-Ref.png">
-      </ULandingSection>
-
-
-
-      <ULandingSection class="bg-[#f7f7f7]" id="testimonials" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-3-Ref.png">
-      </ULandingSection>
-
-
-
-      <ULandingSection class="bg-[#f7f7f7]" id="faq" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-4-Ref.png">
-      </ULandingSection>
-
-
-
-
-      <!-- <ULandingHero
+  <div>
+    <ULandingHero
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
@@ -70,15 +45,22 @@ useSeoMeta({
         </UBadge>
       </template>
 
-<ImagePlaceholder />
+      <ImagePlaceholder />
 
-<ULandingLogos :title="page.logos.title" align="center">
-  <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon"
-    class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
-</ULandingLogos>
-</ULandingHero> -->
+      <ULandingLogos
+        :title="page.logos.title"
+        align="center"
+      >
+        <UIcon
+          v-for="icon in page.logos.icons"
+          :key="icon"
+          :name="icon"
+          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+        />
+      </ULandingLogos>
+    </ULandingHero>
 
-      <!-- <ULandingSection
+    <ULandingSection
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
@@ -93,9 +75,9 @@ useSeoMeta({
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection> -->
+    </ULandingSection>
 
-      <!-- <ULandingSection
+    <ULandingSection
       :title="page.pricing.title"
       :description="page.pricing.description"
       :headline="page.pricing.headline"
@@ -111,9 +93,9 @@ useSeoMeta({
           v-bind="plan"
         />
       </UPricingGrid>
-    </ULandingSection> -->
+    </ULandingSection>
 
-      <!-- <ULandingSection
+    <ULandingSection
       :headline="page.testimonials.headline"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
@@ -130,16 +112,16 @@ useSeoMeta({
           <ULandingTestimonial v-bind="testimonial" />
         </div>
       </UPageColumns>
-    </ULandingSection> -->
+    </ULandingSection>
 
-      <!-- <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
+    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
       <ULandingCTA
         v-bind="page.cta"
         :card="false"
       />
-    </ULandingSection> -->
+    </ULandingSection>
 
-      <!-- <ULandingSection
+    <ULandingSection
       id="faq"
       :title="page.faq.title"
       :description="page.faq.description"
@@ -158,8 +140,6 @@ useSeoMeta({
         }"
         class="max-w-4xl mx-auto"
       />
-    </ULandingSection> -->
-
-    </UPageBody>
-  </UPage>
+    </ULandingSection>
+  </div>
 </template>
