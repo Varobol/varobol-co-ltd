@@ -37,19 +37,13 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader>
     <template #logo>
-      <UAvatar size="sm" src="https://failfast.blob.core.windows.net/upload/Logo_Varobol.png" />
-      <label class="text-[#035ea5]">
-        VAROBOL
-      </label>
+      <UAvatar class="dark:bg-white" size="sm" src="https://failfast.blob.core.windows.net/upload/Logo_Varobol.png" />
+      <label class="text-[#035ea5] dark:text-white">VAROBOL</label>
     </template>
 
     <template #panel>
       <UAsideLinks :links="links" />
-
       <UDivider class="my-6" />
-
-      <UButton label="Sign in" color="white" block class="mb-3" />
-      <UButton label="Get started" block />
     </template>
   </UHeader>
 </template>
