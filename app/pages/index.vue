@@ -11,155 +11,81 @@ useSeoMeta({
 
 <template>
   <UPage>
-    <UPageBody>
-      <ULandingSection class="bg-[#035ea5]" id="features" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-1-Ref.png">
+    <UPageBody :ui="{ wrapper: 'mt-0 pb-0' }">
+      <ULandingSection class="bg-[#035ea5] " id="features" :ui="{ wrapper: 'sm:py-0 ' }">
+        <UPageHero title=""
+          :ui="{ wrapper: 'py-16 sm:py-16 pt-0 sm:pt-0 ', container: 'sm:gap-y-0', title: 'lg:text-7xl  text-white dark:text-white', description: 'lg:text-3xl' }"
+          description="" align="right">
+          <template #title>
+            <label class="text-5xl lg:text-7xl">The Future is Here</label>
+          </template>
+          <template #description>
+            <p class="text-white :dark:text-white lg:text-3xl">Next Gen platform</p>
+          </template>
+          <img src="https://failfast.blob.core.windows.net/upload/webvarobol/session1.png"
+            class="lg:h-3/4 dark:ring-gray-700 justify-self-center " />
+        </UPageHero>
+      </ULandingSection>
+
+      <ULandingSection class="bg-[#f7f7f7]" id="pricing" :ui="{ wrapper: 'py-0 sm:py-0 md:py-0' }">
+        <ULandingHero
+          :ui="{ wrapper: 'py-0 sm:py-0 md:py-0 pt-16 sm:pt-16 md:pt-16', title: 'text-black dark:text-black', description: 'lg:text-3xl text-black dark:text-black' }"
+          title="" description="Everything in your hand" orientation="vertical">
+          <template #title>
+            <label>Connect All in <label class="text-[#ed1c24]">One</label></label>
+          </template>
+          <template #default>
+            <img src="https://failfast.blob.core.windows.net/upload/webvarobol/session2.png"
+              class="w-full  ring-gray-300 dark:ring-gray-700" />
+          </template>
+        </ULandingHero>
       </ULandingSection>
 
 
-      <ULandingSection class="bg-[#f7f7f7]" id="pricing" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-2-Ref.png">
+
+      <ULandingSection class="bg-[#dae7f1]" id="testimonials" :ui="{ wrapper: 'sm:py-0 ' }">
+        <UPageHero :ui="{
+          wrapper: 'py-0 sm:py-0 pt-0 sm:pt-0 ', container: 'sm:gap-y-0', title: 'lg:text-6xl text-black dark:text-black'
+          , description: 'lg:text-3xl text-black dark:text-black'
+        }" align="left">
+          <template #title>
+            <label class="text-5xl lg:text-7xl">Ultimate Security</label>
+          </template>
+          <template #description>
+            <p class="lg:text-3xl">As Good as International Banks
+            </p>
+          </template>
+          <img src="https://failfast.blob.core.windows.net/upload/webvarobol/session3.png"
+            class="lg:h-3/4     dark:ring-gray-700 justify-self-center " />
+        </UPageHero>
       </ULandingSection>
 
 
 
-      <ULandingSection class="bg-[#f7f7f7]" id="testimonials" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-3-Ref.png">
+      <ULandingSection class="bg-[#f7f7f7]" id="faq" :ui="{ wrapper: 'sm:py-0 py-0' }">
+        <ULandingHero
+          :ui="{ wrapper: 'py-0 sm:py-0 md:py-0 pt-16 sm:pt-16 md:pt-16', title: 'text-black dark:text-black', description: 'lg:text-3xl text-black dark:text-black' }"
+          title="Make Lives Happier" description="Digital Transformation With Ease" orientation="vertical">
+          <template #default>
+            <img class="-mt-[96px]" src="https://failfast.blob.core.windows.net/upload/webvarobol/session4.png">
+          </template>
+        </ULandingHero>
       </ULandingSection>
 
-
-
-      <ULandingSection class="bg-[#f7f7f7]" id="faq" :ui="{ wrapper: 'sm:py-0 ' }">
-        <img src="https://failfast.blob.core.windows.net/upload/Varobol-web-tempPage-4-Ref.png">
+      <ULandingSection class="bg-[#dae7f1]" id="faq" :ui="{ wrapper: 'sm:py-0' }">
+        <UPageHero :ui="{ title: 'text-black dark:text-black', description: 'text-black dark:text-black' }" title=""
+          description="" orientation="vertical">
+          <template #title>
+            <label class="text-5xl lg:text-7xl">Vitsit Mana website</label>
+          </template>
+          <template #description>
+            <p class="lg:text-3xl mb-4">Learn more about Mana platform</p>
+            <UButton size="lg"
+              class="bg-[#035ea5] dark:bg-[#035ea5] dark:text-white dark:hover:bg-[#3e91d1] hover:bg-[#3e91d1]">Open
+              Mana Web</UButton>
+          </template>
+        </UPageHero>
       </ULandingSection>
-
-
-
-
-      <!-- <ULandingHero
-      :title="page.hero.title"
-      :description="page.hero.description"
-      :links="page.hero.links"
-    >
-      <template #headline>
-        <UBadge
-          v-if="page.hero.headline"
-          variant="subtle"
-          size="lg"
-          class="relative rounded-full font-semibold"
-        >
-          <NuxtLink
-            :to="page.hero.headline.to"
-            target="_blank"
-            class="focus:outline-none"
-            tabindex="-1"
-          >
-            <span
-              class="absolute inset-0"
-              aria-hidden="true"
-            />
-          </NuxtLink>
-
-          {{ page.hero.headline.label }}
-
-          <UIcon
-            v-if="page.hero.headline.icon"
-            :name="page.hero.headline.icon"
-            class="ml-1 w-4 h-4 pointer-events-none"
-          />
-        </UBadge>
-      </template>
-
-<ImagePlaceholder />
-
-<ULandingLogos :title="page.logos.title" align="center">
-  <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon"
-    class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
-</ULandingLogos>
-</ULandingHero> -->
-
-      <!-- <ULandingSection
-      :title="page.features.title"
-      :description="page.features.description"
-      :headline="page.features.headline"
-    >
-      <UPageGrid
-        id="features"
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <ULandingCard
-          v-for="(item, index) in page.features.items"
-          :key="index"
-          v-bind="item"
-        />
-      </UPageGrid>
-    </ULandingSection> -->
-
-      <!-- <ULandingSection
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :headline="page.pricing.headline"
-    >
-      <UPricingGrid
-        id="pricing"
-        compact
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <UPricingCard
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          v-bind="plan"
-        />
-      </UPricingGrid>
-    </ULandingSection> -->
-
-      <!-- <ULandingSection
-      :headline="page.testimonials.headline"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-    >
-      <UPageColumns
-        id="testimonials"
-        class="xl:columns-4 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <div
-          v-for="(testimonial, index) in page.testimonials.items"
-          :key="index"
-          class="break-inside-avoid"
-        >
-          <ULandingTestimonial v-bind="testimonial" />
-        </div>
-      </UPageColumns>
-    </ULandingSection> -->
-
-      <!-- <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
-      <ULandingCTA
-        v-bind="page.cta"
-        :card="false"
-      />
-    </ULandingSection> -->
-
-      <!-- <ULandingSection
-      id="faq"
-      :title="page.faq.title"
-      :description="page.faq.description"
-      class="scroll-mt-[var(--header-height)]"
-    >
-      <ULandingFAQ
-        multiple
-        :items="page.faq.items"
-        :ui="{
-          button: {
-            label: 'font-semibold',
-            trailingIcon: {
-              base: 'w-6 h-6'
-            }
-          }
-        }"
-        class="max-w-4xl mx-auto"
-      />
-    </ULandingSection> -->
-
     </UPageBody>
   </UPage>
 </template>

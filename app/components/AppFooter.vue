@@ -54,7 +54,7 @@ function onSubmit() {
 </script>
 
 <template>
-  <UFooter>
+  <UFooter class="bg-[#035ea5]">
     <!-- <template #top>
       <UFooterColumns :links="links">
         <template #right>
@@ -89,13 +89,13 @@ function onSubmit() {
 </template> -->
 
     <template #left>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
+      <p class="text-white dark:text-white text-sm">
         Copyright © {{ new Date().getFullYear() }}. All rights reserved.
       </p>
     </template>
 
     <template #right>
-      <UColorModeButton size="sm" />
+      <!-- <UColorModeButton size="sm" /> -->
     </template>
   </UFooter>
 </template>
