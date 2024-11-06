@@ -5,6 +5,7 @@
 This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
 
 [![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b423470-6e45-4e22-8a4c-561a719944fe/deploy-status)](https://app.netlify.com/sites/varobol/deploys)
 
 - [Live demo](https://landing-template.nuxt.dev/)
 - [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
