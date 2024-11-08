@@ -41,9 +41,9 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <label class="text-[#035ea5] dark:text-white">VAROBOL</label>
     </template>
 
-    <template #panel>
+    <!-- <template #panel>
       <UAsideLinks :links="links" />
       <UDivider class="my-6" />
-    </template>
+    </template> -->
   </UHeader>
 </template>
