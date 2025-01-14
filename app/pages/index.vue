@@ -8,13 +8,13 @@ useSeoMeta({
   ogImage: {
     url: page.value.imagelogo,
     value: page.value.imagelogo,
-    height: 1280,
+    height: 1024,
     width: 640,
     type: 'image/png'
   },
-  ogImageWidth: "1280px",
+  ogImageWidth: "1024px",
   ogImageHeight: "640px",
-  ogDescription: page.value.description + "index3"
+  ogDescription: page.value.description + "index4"
 })
 </script>
 
