@@ -5,7 +5,10 @@ useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
-  ogDescription: page.value.description
+  ogImage: page.value.imagelogo,
+  ogImageWidth: 1280,
+  ogImageHeight: 640,
+  ogDescription: page.value.description + "index"
 })
 </script>
 

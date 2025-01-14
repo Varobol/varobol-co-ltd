@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,9 +14,13 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterCard: 'summary_large_image'
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogImage: page.value.imagelogo,
+  ogImageWidth: 1280,
+  ogImageHeight: 640,
+  ogDescription: page.value.description + "app"
 })
 </script>
 
