@@ -17,9 +17,9 @@ useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
-  ogImage: '/Logo_Varobol.png',
+  ogImage: page.value.imagelogo,
   ogImageWidth: "1024",
-  ogImageHeight: "640",
+  ogImageHeight: "1024",
   ogDescription: page.value.description + "app"
 })
 </script>
