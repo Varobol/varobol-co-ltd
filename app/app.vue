@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('app', () => queryContent('').findOne())
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
 useHead({
   meta: [
