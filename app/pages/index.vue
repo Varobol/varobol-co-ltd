@@ -6,10 +6,9 @@ useSeoMeta({
   ogTitle: page.value.title,
   description: page.value.description,
   ogImage: page.value.imagelogo,
-  ogImageWidth: 1024,
+  ogImageWidth: 2048,
   ogImageHeight: 1024,
-  ogImageUrl: page.value.imagelogo,
-  ogDescription: page.value.description + "index999"
+  ogDescription: page.value.description + "index888"
 })
 
 </script>
