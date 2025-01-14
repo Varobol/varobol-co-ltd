@@ -12,9 +12,9 @@ useSeoMeta({
     width: 640,
     type: 'image/png'
   },
-  ogImageWidth: 1280,
-  ogImageHeight: 640,
-  ogDescription: page.value.description + "index2"
+  ogImageWidth: "1280px",
+  ogImageHeight: "640px",
+  ogDescription: page.value.description + "index3"
 })
 </script>
 

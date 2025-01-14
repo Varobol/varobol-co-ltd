@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('app', () => queryContent('/').findOne())
 
 useHead({
   meta: [
@@ -18,8 +18,8 @@ useSeoMeta({
   ogTitle: page.value.title,
   description: page.value.description,
   ogImage: page.value.imagelogo,
-  ogImageWidth: 1280,
-  ogImageHeight: 640,
+  ogImageWidth: "1280px",
+  ogImageHeight: "640px",
   ogDescription: page.value.description + "app"
 })
 </script>
