@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
 useHead({
   meta: [
@@ -14,13 +13,9 @@ useHead({
 })
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogImage: page.value.imagelogo,
-  ogImageWidth: 1024,
-  ogImageHeight: 1024,
-  ogDescription: page.value.description + "app"
+  ogImage: 'https://failfast.blob.core.windows.net/upload/Logo_Varobol.png',
+  twitterImage: 'https://failfast.blob.core.windows.net/upload/Logo_Varobol.png',
+  twitterCard: 'summary_large_image'
 })
 </script>
 
