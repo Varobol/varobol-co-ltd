@@ -18,8 +18,8 @@ useSeoMeta({
   ogTitle: page.value.title,
   description: page.value.description,
   ogImage: page.value.imagelogo,
-  ogImageWidth: "1024",
-  ogImageHeight: "1024",
+  ogImageWidth: 1024,
+  ogImageHeight: 1024,
   ogDescription: page.value.description + "app"
 })
 </script>
