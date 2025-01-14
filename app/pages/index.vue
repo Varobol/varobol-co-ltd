@@ -8,7 +8,8 @@ useSeoMeta({
   ogImage: page.value.imagelogo,
   ogImageWidth: 1024,
   ogImageHeight: 1024,
-  ogDescription: page.value.description + "index8"
+  ogImageUrl: page.value.imagelogo,
+  ogDescription: page.value.description + "index999"
 })
 
 </script>
