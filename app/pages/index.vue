@@ -5,17 +5,13 @@ useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
-  ogImage: {
-    url: page.value.imagelogo,
-    value: page.value.imagelogo,
-    height: 1024,
-    width: 640,
-    type: 'image/png'
-  },
+  // ogImage: page.value.imagelogo,
+  ogImage: '/Logo_Varobol.png',
   ogImageWidth: "1024",
   ogImageHeight: "640",
-  ogDescription: page.value.description + "index5"
+  ogDescription: page.value.description + "index6"
 })
+
 </script>
 
 <template>
