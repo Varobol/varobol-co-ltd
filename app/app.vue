@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,8 +13,8 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
+  ogImage: 'https://failfast.blob.core.windows.net/upload/Logo_Varobol.png',
+  twitterImage: 'https://failfast.blob.core.windows.net/upload/Logo_Varobol.png',
   twitterCard: 'summary_large_image'
 })
 </script>
